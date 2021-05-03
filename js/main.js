@@ -18,7 +18,7 @@ axios.get('https://rickandmortyapi.com/api/character/?name=' + personagemPesquis
      var mostrarPersonagem = '';
     
     for(var i =0;i<personagem.length; i++){
-        mostrarPersonagem += `
+mostrarPersonagem += `
 <div class ="col-sm-6 col-md-4">
 <div class="thumbnail">
 <img src="${personagem[i].image}" class="img-thumbnail">
@@ -31,14 +31,7 @@ axios.get('https://rickandmortyapi.com/api/character/?name=' + personagemPesquis
     document.getElementById('personagem').innerHTML = mostrarPersonagem;
   })
   .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .then(function () {
-    // always executed
-  });
-
-// Procura por status
+    // Procura por status
  axios.get('https://rickandmortyapi.com/api/character/?status=' + personagemPesquisar)
   .then(function (response) {
     // handle success
@@ -61,13 +54,7 @@ axios.get('https://rickandmortyapi.com/api/character/?name=' + personagemPesquis
   })
   .catch(function (error) {
     // handle error
-    console.log(error);
-  })
-  .then(function () {
-    // always executed
-  });
-    
-    //Procura por gênero
+      //Procura por gênero
     axios.get('https://rickandmortyapi.com/api/character/?gender=' + personagemPesquisar)
   .then(function (response) {
     // handle success
@@ -92,7 +79,6 @@ axios.get('https://rickandmortyapi.com/api/character/?name=' + personagemPesquis
     // handle error
     console.log(error);
   })
-  .then(function () {
-    // always executed
-  });
+ })
+});
 }
