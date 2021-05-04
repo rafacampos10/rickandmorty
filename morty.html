@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="pt-br">
 <head>
-    <title>Pagina Inicial</title>
+   <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-<style>
-    .input-group{
-        width: 75%;
-        margin-left: 10%;
-        margin-top: 65%;
-    }
-       
-.menu ul li{
+    
+    <title>Portal</title>
+    
+    <style>
+    .menu ul li{
 	background-color: rgba(0,128,0,0.6);
 	float: left;
 	width: 240px;
@@ -60,23 +54,45 @@
 	color: white;
 	text-decoration: none;
 }
-    
-    .container{
-        background: rgba(0,255,255,0.3);
-        width: auto;
-    }
-    
 
-</style>
+        .container{
+            float: right;
+            background: rgba(0,255,255,0.3);
+            height: auto;
+            width: 50%;
+            margin-top: 20%;
+            margin-right: 10%;
+        }
+        
+        .img{
+            float: left;
+            height: auto;
+            width: auto;
+            margin-top: 40%;
+            
+        }
+        
+        h1{
+            color: yellow;
+              line-height: 2.6;
+        }
+        
+        footer{
+            float: left;
+            height: auto;
+            width: auto;
+        }
+        
+    </style>
+    
+    
 </head>
-
 <body>
-    <nav class="menu">
+<nav class="menu">
         <ul>
             <li><a href="index.html">Voltar</a></li>
             <li><a href="#">Principais Personagens</a>
                 <ul>
-                    
                     <li><a href="rick.html">Rick Sanchez</a></li>
                     <li><a href="morty.html">Morty Smith</a></li>
                     <li><a href="#">Personagem 3</a></li>
@@ -148,42 +164,24 @@
             
         </ul>
     </nav>
+    <div class="img">
+        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">  
+    </div>
+                        
+    <div class="container">
+               <h1>Informações:</h1>
+                <div class="row" id="personagem">
 
-    <header>
-        <div>
-
-            <div class="header clearfix">
-
-                <div class="jumbobutton">
-
-                    <div class="col-lg-32">
-
-                        <form class="input-group" id="formulario">
-                            <input type="text" name="" class="form-control" id="pesquisar" placeholder="Name, Status ou Gender"></input>
-                            <span class="input-group-btn">
-                                <button class="btn btn-primary" type="submit">Pesquisar</button>
-                            </span>
-
-                    </div>
+                    <h1>Nome: Morty Smith</h1>
+                    <h1>Gênero: Masculino</h1>
+                    <h1>Localização: Terra</h1>
+                    <h1>Espécie: Humano</h1>
+                    <h1>Status: Ativo</h1>
+                    <h1>Nº de Episódios: 41</h1>
                 </div>
-
             </div>
-
-
-
-            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-            <script src="js/main.js"></script>
-
-
-            <div class="container">
-                <div class="row" id="personagem"></div>
-            </div>
-    </header>
-
-    <footer>
-        <div id="box-img"><img src="img/rick.jpg" alt=""></div>
-    </footer>
+   <footer>
+<div id="box-img"><img src="img/rick.jpg" alt=""></div>
+</footer>
 </body>
-
 </html>
