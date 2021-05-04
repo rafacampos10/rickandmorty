@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portal</title>
-    
-    <style>
-        
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<style>
+    .input-group{
+        width: 75%;
+        margin-left: 10%;
+        margin-top: 65%;
+    }
+       
 .menu ul li{
 	background-color: rgba(0,128,0,0.6);
 	float: left;
-	width: 240px;
+	width: 245px;
 	height: 50px;
 	display: inline-block;
 	text-align: center;
@@ -36,7 +43,7 @@
 }
 
 .menu ul ul ul{
-	margin-left: 240px;
+	margin-left: 245px;
 	top: 0px;
 	position: absolute;
 }
@@ -53,89 +60,13 @@
 	color: white;
 	text-decoration: none;
 }
-        
-        
-        article{
-            height: auto;
-            width: 60%;
-            float: left;
-            margin-top: 40%;
-            margin-left: 25%;
-            margin-right: 25%;
-            background:;
-        }
-        
-        h1{
-            color: yellow;
-            font-family: Arial;
-            background: lightblue;
-            border-radius: 10px;
-            margin-top: 55%;
-            font-size: 20px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-        
-        h2{
-            color: yellow;
-            font-family: Arial;
-            background: ;
-            border-radius: 10px;
-            text-align: justify;
-            font-size: 20px;
-            font-family:sans-serif;
-            word-wrap: break-word;
-        }
-        
-        footer{
-            width: 100%;
-            height: auto;
-            margin-top: 100%;
-            margin-left: 5%;
-            float: left;
-        }
-        
-        @media only screen and (max-device-width: 750px) and (-webkit-min-device-pixel-ratio: 1) {
-            h1,h2{
-                font-size: 30px;
-            }
-            menu ul li{
-                width: 320px;
-            }   
-            
-        }
-        
-        @media only screen and (min-device-width: 1200px) and (max-device-width: 1700px) and (-webkit-min-device-pixel-ratio: 1) {
-            article{
-                width: 50%;
-            margin-left: 25%;
-            margin-right: 10%;
-            }
-            
-            h2{
-                width:auto;
-                margin-top: auto;
-            }
-            
-            menu ul li{
-                width: 320px;
-            }   
-            
-        }
-        
-        @media only screen and (min-device-width: 2300px) and (max-device-width: 2700px) and (-webkit-min-device-pixel-ratio: 1) {
-         h1,h2{
-                font-size: 60px;
-            }
-            
-            menu ul li{
-                width: 320px;
-            }   
-        }
-    </style>
+    
+
+</style>
 </head>
+
 <body>
-<nav class="menu">
+    <nav class="menu">
         <ul>
             <li><a href="index.html">Voltar</a></li>
             <li><a href="#">Principais Personagens</a>
@@ -211,22 +142,42 @@
             
         </ul>
     </nav>
- 
- <header>
-     
- </header>
-  
-       <article>
-           <h1>
-               Bem-Vindo(a) ao mundo de Rick and Morty !
-           </h1>
-           <h2>
-                 Esse espaço foi feito para a visualização do Mundo de Rick and Morty. Dentro do menu,existem alguns tópicos e sub-tópicos de pesquisa de personagens por nome, gênero e status e também detalhes dos personagens principais do desenho que se encontra na aba "Principais Personagens".
-               </h2>
-           
-                  </article>
-            <footer>
-<div id="box-img"><img src="img/rick.jpg" alt=""></div>
-</footer>     
- </body>
+
+    <header>
+        <div>
+
+            <div class="header clearfix">
+
+                <div class="jumbobutton">
+
+                    <div class="col-lg-32">
+
+                        <form class="input-group" id="formulario">
+                            <input type="text" name="" class="form-control" id="pesquisar" placeholder="Name, Status ou Gender"></input>
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit">Pesquisar</button>
+                            </span>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <script src="js/main.js"></script>
+
+
+            <div class="container">
+                <div class="row" id="personagem"></div>
+            </div>
+    </header>
+
+    <footer>
+        <div id="box-img"><img src="img/rick.jpg" alt=""></div>
+    </footer>
+</body>
+
 </html>

@@ -2,7 +2,11 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-background: lightgreen;
+background: url(../img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -95,4 +99,16 @@ footer {
     margin-top: auto;
     float: left;
     
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    float: left;
+}
+
+header{
+    height: auto;
+    float: left;
+    width: 100%;
 }
