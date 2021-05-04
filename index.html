@@ -6,11 +6,18 @@
     <title>Portal</title>
     
     <style>
+        nav{
+            width: 100%;
+            float: left;
+        }
         
+        .menu{
+            width: 100%;
+        }
 .menu ul li{
 	background-color: rgba(0,128,0,0.6);
 	float: left;
-	width: 240px;
+	width: 320px;
 	height: 50px;
 	display: inline-block;
 	text-align: center;
@@ -40,9 +47,15 @@
 	top: 0px;
 	position: absolute;
 }
+        .menu ul ul ul li{
+            width: 500px;
+            margin-left: 16%;
+        }
+
 
 .menu ul ul li:hover{
 	background-color: rgba(34,139,34,0.5);
+    
 }
 
 .menu ul ul ul li:hover{
@@ -95,17 +108,21 @@
             float: left;
         }
         
-        @media only screen and (max-device-width: 750px) and (-webkit-min-device-pixel-ratio: 1) {
+        @media only screen and (max-device-width: 400px) and (-webkit-min-device-pixel-ratio: 1) {
             h1,h2{
                 font-size: 30px;
             }
-            menu ul li{
-                width: 320px;
-            }   
+            .menu ul li{
+                width: 220px;
+            }
+            .menu ul ul ul li{
+            margin-left: -4%;
+            }
+
             
         }
         
-        @media only screen and (min-device-width: 1200px) and (max-device-width: 1700px) and (-webkit-min-device-pixel-ratio: 1) {
+        @media only screen and (min-device-width: 402px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
             article{
                 width: 50%;
             margin-left: 25%;
@@ -117,20 +134,25 @@
                 margin-top: auto;
             }
             
-            menu ul li{
-                width: 320px;
+            .menu ul li{
+                width: 240px;
             }   
-            
+         .menu ul ul ul li{
+            margin-left: 0%;
+            }   
         }
         
-        @media only screen and (min-device-width: 2300px) and (max-device-width: 2700px) and (-webkit-min-device-pixel-ratio: 1) {
+        @media only screen and (min-device-width: 1000px) and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 1) {
          h1,h2{
                 font-size: 60px;
             }
             
-            menu ul li{
-                width: 320px;
-            }   
+            .menu ul li{
+                width: 240px;
+            }
+            .menu ul ul ul li{
+            margin-left: 0%;
+            }
         }
     </style>
 </head>
@@ -151,58 +173,59 @@
                 <ul>
                     <li><a href="#">Temporada 1: </a>
                     <ul>
-                            <li><a href="#">Episodio 1 - </a></li>
-                            <li><a href="#">Episodio 2 - </a></li>
-                            <li><a href="#">Episodio 3 - </a></li>
-                            <li><a href="#">Episodio 4 - </a></li>
-                            <li><a href="#">Episodio 5 - </a></li>
-                            <li><a href="#">Episodio 6 - </a></li>
-                            <li><a href="#">Episodio 7 - </a></li>
-                            <li><a href="#">Episodio 8 - </a></li>
-                            <li><a href="#">Episodio 9 - </a></li>
-                            <li><a href="#">Episodio 10 - </a></li>
+                            <li><a href="#">1 - Pilot</a></li>
+                            <li><a href="#">2 - Lawnmower Dog</a></li>
+                            <li><a href="#">3 - Anatomy Park</a></li>
+                            <li><a href="#">4 - M. Night Shaym-Aliens!</a></li>
+                            <li><a href="#">5 - Meeseeks and Destroy</a></li>
+                            <li><a href="#">6 - Rick Potion #9</a></li>
+                            <li><a href="#">7 - Raising Gazorpazorp</a></li>
+                            <li><a href="#">8 - Rixty Minutes</a></li>
+                            <li><a href="#">9 - Something Ricked This Way Comes</a></li>
+                            <li><a href="#">10 - Close Rick-counters of the Rick Kind</a></li>
+                            <li><a href="#">11 - Ricksy Business</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Temporada 2: </a>
                         <ul>
-                            <li><a href="#">Episodio 1 - </a></li>
-                            <li><a href="#">Episodio 2 - </a></li>
-                            <li><a href="#">Episodio 3 - </a></li>
-                            <li><a href="#">Episodio 4 - </a></li>
-                            <li><a href="#">Episodio 5 - </a></li>
-                            <li><a href="#">Episodio 6 - </a></li>
-                            <li><a href="#">Episodio 7 - </a></li>
-                            <li><a href="#">Episodio 8 - </a></li>
-                            <li><a href="#">Episodio 9 - </a></li>
-                            <li><a href="#">Episodio 10 - </a></li>
+                            <li><a href="#">1 - A Rickle in Time</a></li>
+                            <li><a href="#">2 - Mortynight Run</a></li>
+                            <li><a href="#">3 - Auto Erotic Assimilation</a></li>
+                            <li><a href="#">4 - Total Rickall</a></li>
+                            <li><a href="#">5 - Get Schwifty</a></li>
+                            <li><a href="#">6 - The Ricks Must Be Crazy</a></li>
+                            <li><a href="#">7 - Big Trouble in Little Sanchez</a></li>
+                            <li><a href="#">8 - Interdimensional Cable 2: Tempting Fate</a></li>
+                            <li><a href="#">9 - Look Who's Purging Now</a></li>
+                            <li><a href="#">10 - The Wedding Squanchers</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Temporada 3: </a>
                     <ul>
-                            <li><a href="#">Episodio 1 - </a></li>
-                            <li><a href="#">Episodio 2 - </a></li>
-                            <li><a href="#">Episodio 3 - </a></li>
-                            <li><a href="#">Episodio 4 - </a></li>
-                            <li><a href="#">Episodio 5 - </a></li>
-                            <li><a href="#">Episodio 6 - </a></li>
-                            <li><a href="#">Episodio 7 - </a></li>
-                            <li><a href="#">Episodio 8 - </a></li>
-                            <li><a href="#">Episodio 9 - </a></li>
-                            <li><a href="#">Episodio 10 - </a></li>
+                            <li><a href="#">1 - The Rickshank Rickdemption</a></li>
+                            <li><a href="#">2 - Rickmancing the Stone</a></li>
+                            <li><a href="#">3 - Pickle Rick</a></li>
+                            <li><a href="#">4 - Vindicators 3: The Return of Worldender</a></li>
+                            <li><a href="#">5 - The Whirly Dirly Conspiracy</a></li>
+                            <li><a href="#">6 - Rest and Ricklaxation</a></li>
+                            <li><a href="#">7 - The Ricklantis Mixup</a></li>
+                            <li><a href="#">8 - Morty's Mind Blowers</a></li>
+                            <li><a href="#">9 - The ABC's of Beth</a></li>
+                            <li><a href="#">10 - The Rickchurian Mortydate</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Temporada 4: </a>
                        <ul>
-                            <li><a href="#">Episodio 1 - </a></li>
-                            <li><a href="#">Episodio 2 - </a></li>
-                            <li><a href="#">Episodio 3 - </a></li>
-                            <li><a href="#">Episodio 4 - </a></li>
-                            <li><a href="#">Episodio 5 - </a></li>
-                            <li><a href="#">Episodio 6 - </a></li>
-                            <li><a href="#">Episodio 7 - </a></li>
-                            <li><a href="#">Episodio 8 - </a></li>
-                            <li><a href="#">Episodio 9 - </a></li>
-                            <li><a href="#">Episodio 10 - </a></li>
+                            <li><a href="#">1 - Edge of Tomorty: Rick Die Rickpeat</a></li>
+                            <li><a href="#">2 - The Old Man and the Seat</a></li>
+                            <li><a href="#">3 - One Crew over the Crewcoo's Morty</a></li>
+                            <li><a href="#">4 - Claw and Hoarder: Special Ricktim's Morty</a></li>
+                            <li><a href="#">5 - Rattlestar Ricklactica</a></li>
+                            <li><a href="#">6 - Never Ricking Morty</a></li>
+                            <li><a href="#">7 - Promortyus</a></li>
+                            <li><a href="#">8 - The Vat of Acid Episode</a></li>
+                            <li><a href="#">9 - Childrick of Mort</a></li>
+                            <li><a href="#">10 - Star Mort Rickturn of the Jerri</a></li>
                         </ul>
                     </li>
                 </ul>
